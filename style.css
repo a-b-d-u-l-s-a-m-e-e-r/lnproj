@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#bg {
+    background-color: black;
+    overflow: hidden;
+}
+
+
+#top-fix{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    border: 1px solid transparent;
+    z-index: 999;
+}
+
+
+#top-fix #logo {
+    position: fixed;
+    font-size: 2.3vw;
+    padding: 1vw 3vw;
+    font-family: voyage;
+    text-transform: uppercase;
+    font-weight: 700;
+    left: 3vw;
+    letter-spacing: 0.7vw;
+    color: rgb(212, 106, 143);
+}
+
+#top-fix #logo span {
+    color: rgb(184, 101, 18);
+}
+
+#top-fix #logo #l img {
+    position: fixed;
+    height: 4vw;
+    width: 3.5vw;
+    left: 1.5vw;
+    top: 1.2vw;
+    
+}
+#top-fix #logo #line{
+    height: 0.1vw;
+    width: 16vw;
+    left: 5.5vw;
+    top: 4vw;
+    position: fixed;
+    background-color: rgb(184, 101, 18);
+}
+#top-fix #txt{
+    position: fixed;
+    font-size: 0.8vw;
+    color: rgb(212, 106, 143);
+    letter-spacing: 0;
+    line-height: 1.7vw;
+    left: 6vw;
+    font-family: gilroy;
+    word-spacing: 0.2vw;
+}
+#top-fix #dep {
+    position: fixed;
+    cursor: pointer;
+    font-size: 2vw;
+    font-family: voyage;
+    color: rgb(212, 106, 143);
+    text-transform: capitalize;
+    padding: 1vw 3vw;
+    right: 19vw;
+    top: 0.5vw;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    text-decoration-style: double;
+    text-decoration-thickness: 1px;
+}
+
+#top-fix #cret {
+    position: fixed;
+    cursor: pointer;
+    font-size: 2vw;
+    font-family: voyage;
+    color: rgb(212, 106, 143);
+    text-transform: capitalize;
+    padding: 1vw 3vw;
+    right: 9vw;
+    top: 0.5vw;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    text-decoration-style: double;
+    text-decoration-thickness: 1px;
+}
+
+#top-fix #evt {
+    position: fixed;
+    cursor: pointer;
+    font-size: 2vw;
+    font-family: voyage;
+    color: rgb(212, 106, 143);
+    text-transform: capitalize;
+    padding: 1vw 3vw;
+    right: 1vw;
+    top: 0.5vw;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    text-decoration-style: double;
+    text-decoration-thickness: 1px;
+}
+
+#main .maind {
+    height: 100vh;
+    width: 100%;
+}
+#main #m1 #cards{
+    position: absolute;
+    height: 22vw;
+    width:35vw;
+    left: 4vw;
+    top: 15vw;
+    box-shadow: -15px -20px 40px rgb(70, 71, 72);
+    background-color: aliceblue;
+}

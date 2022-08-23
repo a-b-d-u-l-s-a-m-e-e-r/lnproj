@@ -20,4 +20,27 @@ function show() {
 
 show();
 
+var c = 0;
+var arr = [{ bg: "rgb(212, 106, 143)", cl: "black",dis:"visible" },
+{ bg: "black", cl: "aliceblue" ,dis:"visible" },
+{ bg: "rgb(212, 106, 143)", cl: "black" ,dis:"visible" },
+{ bg: "black", cl: "aliceblue",dis:"hidden" }]
+
+var b = setInterval(function () {
+   if(c<5){
+   document.querySelector("#lndpge").style.backgroundColor = `${arr[c].bg}`;
+   document.querySelector("#lndpge .clm").style.color = `${arr[c].cl}`;
+   document.querySelector("#lndpge #line").style.backgroundColor = `${arr[c].cl}`;
+   document.querySelector("#lndpge .clms").style.color = `${arr[c].cl}`;
+   document.querySelector("#lndpge").style.visibility=`${arr[c].dis}`;
+   c++;}
+   else{
+      
+   }
+}, 700)
+
+
+
+
+
 

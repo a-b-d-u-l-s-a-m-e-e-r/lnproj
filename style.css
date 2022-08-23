@@ -15,8 +15,53 @@ body {
     overflow: hidden;
 }
 
+#lndpge {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(212, 106, 143);
+    z-index: 9999;
+}
 
-#top-fix{
+#lndpge h1 {
+    position: fixed;
+    font-size: 5vw;
+    color: black;
+    text-transform: uppercase;
+    font-family: voyage;
+    letter-spacing: 1vw;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-14vw, -7vw);
+    font-weight: 900;
+    font-style: oblique;
+}
+
+#lndpge h2 {
+    position: fixed;
+    font-size: 2vw;
+    color: black;
+    text-transform: uppercase;
+    font-family: voyage;
+    letter-spacing: 0.5vw;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-21vw, -0.5vw);
+    font-weight: 900;
+    font-style: oblique;
+}
+
+#lndpge #line {
+    position: fixed;
+    height: .1vw;
+    width: 45vw;
+    background-color: black;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-22.4vw, -0.6vw);
+}
+
+#top-fix {
     position: fixed;
     height: 10vh;
     width: 100%;
@@ -32,13 +77,15 @@ body {
     font-family: voyage;
     text-transform: uppercase;
     font-weight: 700;
-    left: 3vw;
+    left: 2.8vw;
     letter-spacing: 0.7vw;
     color: rgb(212, 106, 143);
+    font-weight: 700;
 }
 
 #top-fix #logo span {
     color: rgb(184, 101, 18);
+    font-weight: 700;
 }
 
 #top-fix #logo #l img {
@@ -47,9 +94,10 @@ body {
     width: 3.5vw;
     left: 1.5vw;
     top: 1.2vw;
-    
+
 }
-#top-fix #logo #line{
+
+#top-fix #logo #line {
     height: 0.1vw;
     width: 16vw;
     left: 5.5vw;
@@ -57,7 +105,8 @@ body {
     position: fixed;
     background-color: rgb(184, 101, 18);
 }
-#top-fix #txt{
+
+#top-fix #txt {
     position: fixed;
     font-size: 0.8vw;
     color: rgb(212, 106, 143);
@@ -67,6 +116,7 @@ body {
     font-family: gilroy;
     word-spacing: 0.2vw;
 }
+
 #top-fix #dep {
     position: fixed;
     cursor: pointer;
@@ -75,12 +125,9 @@ body {
     color: rgb(212, 106, 143);
     text-transform: capitalize;
     padding: 1vw 3vw;
-    right: 19vw;
+    right: 21.4vw;
     top: 0.5vw;
-    text-decoration: underline;
-    text-decoration-color: aliceblue;
-    text-decoration-style: double;
-    text-decoration-thickness: 1px;
+    font-weight: 700;
 }
 
 #top-fix #cret {
@@ -93,10 +140,7 @@ body {
     padding: 1vw 3vw;
     right: 9vw;
     top: 0.5vw;
-    text-decoration: underline;
-    text-decoration-color: aliceblue;
-    text-decoration-style: double;
-    text-decoration-thickness: 1px;
+    font-weight: 700;
 }
 
 #top-fix #evt {
@@ -109,22 +153,103 @@ body {
     padding: 1vw 3vw;
     right: 1vw;
     top: 0.5vw;
-    text-decoration: underline;
-    text-decoration-color: aliceblue;
-    text-decoration-style: double;
-    text-decoration-thickness: 1px;
+    font-weight: 700;
 }
 
-#main .maind {
-    height: 100vh;
-    width: 100%;
+
+
+#ln {
+    position: fixed;
+    bottom: 1vw;
+    left: 80vw;
+    z-index: 999;
+    text-align: center;
+    line-height: 2.5vw;
+    mix-blend-mode: difference;
 }
-#main #m1 #cards{
+
+#ln h1 {
+    font-size: 3vw;
+    font-family: voyage;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 2vw;
+}
+
+#ln h2 {
+    font-size: 1vw;
+    font-family: voyage;
+    color: aliceblue;
+    text-transform: capitalize;
+    letter-spacing: 0.5vw;
+}
+
+#ln #line {
+    position: fixed;
+    height: 0.1vw;
+    width: 28vw;
+    right: 3.3vw;
+    top: 4vw;
+}
+
+#ln #line #l1 {
     position: absolute;
-    height: 22vw;
-    width:35vw;
-    left: 4vw;
-    top: 15vw;
-    box-shadow: -15px -20px 40px rgb(70, 71, 72);
+    height: 100%;
+    width: 7.2vw;
+    left: 0;
     background-color: aliceblue;
 }
+
+#ln #line #l2 {
+    position: absolute;
+    height: 100%;
+    width: 10.7vw;
+    left: 8.9vw;
+    background-color: aliceblue;
+}
+
+#ln #line #l3 {
+    position: absolute;
+    height: 100%;
+    width: 6vw;
+    right: 0.3vw;
+    background-color: aliceblue;
+}
+
+#main #m1{
+    position: relative;
+    height: 50vw;
+    width: 100vw;
+    background-color: black;
+}
+#main #m1 #ltlg {
+    position: absolute;
+    color: aliceblue;
+    top: 45vw;
+    left: 5vw;
+    font-size: 2vw;
+    font-family: voyage;
+    letter-spacing: 0.5vw;
+}
+
+#main #m1 #icn {
+    position: absolute;
+    height: 3.7vw;
+    width: 2.9vw;
+    background-color: transparent;
+    top:44.5vw;
+    left: 1.2vw;
+    object-fit: cover;
+    object-position: center;
+}
+#main #m1 #crd1{
+    position: absolute;
+    height: 20vw;
+    width: 30vw;
+    top: 15vw;
+    left: 10vw;
+    background-color: aliceblue;
+}
+
+
+

@@ -37,7 +37,31 @@ var b = setInterval(function () {
    else{
       
    }
-}, 700)
+}, 400)
+
+var tl=gsap.timeline();
+tl.from("#main #m2 #crd2",{
+   rotation:25,
+   delay:4,
+   scrollTrigger: {
+      trigger: "#main #m2 #crd1",
+      scroller: "#bg",
+      start: "top 200%",
+      end: "top 160%",
+      scrub: true
+  }
+})
+tl.from("#main #m2 #crd1",{
+   rotation:-25,
+   scrollTrigger: {
+      trigger: "#main #m2 #crd1",
+      scroller: "#bg",
+      start: "top 200%",
+      end: "top 160%",
+      scrub: true
+  }
+})
+
 
 
 

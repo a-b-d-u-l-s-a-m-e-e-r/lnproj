@@ -216,10 +216,14 @@ body {
     background-color: aliceblue;
 }
 
+#main{
+    position: relative;
+    width: 100vw;
+}
 #main #m1{
     position: relative;
-    height: 50vw;
-    width: 100vw;
+    height: 100vh;
+    width: 100%;
     background-color: black;
 }
 #main #m1 #ltlg {
@@ -242,13 +246,121 @@ body {
     object-fit: cover;
     object-position: center;
 }
-#main #m1 #crd1{
-    position: absolute;
-    height: 20vw;
-    width: 30vw;
-    top: 15vw;
-    left: 10vw;
+
+
+#main #vid{
+    position: relative;
+    height: 100vh;
+    width: 100%;
     background-color: aliceblue;
+}
+#main #vid #vi{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#main #m2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 9;
+}
+#main #m2 #crd1{
+    position: absolute;
+    height: 18vw;
+    width: 15vw;
+    top: 35vw;
+    left: 25vw;
+    transform: rotate(-10deg);
+    background-image: linear-gradient(to bottom left,rgb(89, 89, 89),rgb(202, 195, 195),rgb(89, 89, 89));
+    overflow: hidden;
+}
+#main #m2 #crd1 #l1{
+   position: absolute;
+    width: 100%;
+    height: 70%;
+    background-image: url(https://images.unsplash.com/photo-1660866838314-4ece130b4776?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-size: cover;
+    border-top: 10px  solid black;
+    border-bottom: 10px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#main #m2 #crd1 #dot1{
+    position: absolute;
+    height: 12%;
+    width: 15%;
+    top: 2%;
+    left: 42%;
+    border-radius: 50%;
+    background-color: rgb(173, 3, 3);
+}
+#main #m2 #crd1 #dot2{
+    position: absolute;
+    height: 8%;
+    width: 10%;
+    top: 4%;
+    left: 44.2%;
+    border-radius: 50%;
+    background-color: rgb(113, 12, 12);
+}
+#main #m2 #crd2{
+    position: absolute;
+    height: 18vw;
+    width: 15vw;
+    top: 20vw;
+    left: 5vw;
+    transform: rotate(10deg);
+    background-image: linear-gradient(to bottom right,rgb(89, 89, 89),rgb(202, 195, 195),rgb(89, 89, 89));
+    overflow: hidden;
+}
+#main #m2 #crd2 #l1{
+   position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1660903370514-33bcfe0ef0a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=410&q=80);
+    background-position: center;
+    background-size: cover;
+    border-top: 10px  solid black;
+    border-bottom: 10px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#main #m2 #crd2 #dot1{
+    position: absolute;
+    height: 12%;
+    width: 15%;
+    top: 2%;
+    left: 42%;
+    border-radius: 50%;
+    background-color: rgb(2, 147, 75);
+}
+#main #m2 #crd2 #dot2{
+    position: absolute;
+    height: 8%;
+    width: 10%;
+    top: 4%;
+    left: 44.2%;
+    border-radius: 50%;
+    background-color: rgb(12, 92, 14);
+}
+
+
+#main #m3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
 }
 
 
